@@ -1,11 +1,12 @@
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+var mongoose = require('mongoose');
+var dotenv = require('dotenv');
+
 dotenv.config();
 
 
 
 const connect=async()=>{
+    mongoose.set('strictQuery', true);
     await mongoose.connect(process.env.MONGODB_URL,{useNewUrlParser: true, useUnifiedTopology: true})
 }
-
-export default connect;
+module.exports=connect

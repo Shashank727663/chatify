@@ -1,9 +1,10 @@
 // designing a schema for the login page
-import { ObjectID } from './../node_modules/mongodb/src/index';
-const mongoose=require('mongoose');
+const mongoose = require('mongoose');
+var Obj = require('mongodb').ObjectId;
+
 //designing a schema for the backend of the login page 
 const LoginSchema=mongoose.Schema({
-    _id:ObjectID,
+    _id:Obj,
     user_name:{
         type:String,
         required:true
@@ -25,4 +26,4 @@ const LoginSchema=mongoose.Schema({
 })
 
 
-export default mongoose.model("login + message",LoginSchema)
+module.exports = mongoose.model("login + message",LoginSchema);

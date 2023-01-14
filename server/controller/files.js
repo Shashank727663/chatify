@@ -1,5 +1,6 @@
-import cloudinary from "cloudnary";
-import dotenv from 'dotenv';
+var cloudinary = require("cloudinary");
+var dotenv = require('dotenv');
+
 dotenv.config();
 //for using the enviroment variables 
 const ImageUpload=(req,res)=>{
@@ -28,4 +29,5 @@ const ImageUpload=(req,res)=>{
     }
 }
 
-export default ImageUpload;
+module.exports = ImageUpload;
+
