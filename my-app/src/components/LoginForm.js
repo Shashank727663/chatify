@@ -5,7 +5,7 @@ import TextField from '@mui/material/TextField';
 import Fab from '@mui/material/Fab';
 import Button from '@mui/material/Button';
 
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
 
 
 
@@ -89,7 +89,7 @@ const LoginForm=({setUserDataForChat})=>{
           aria-label="add"
           variant="extended"
         >
-          <PersonAddIcon /> Upload avatar
+          <AddAPhotoIcon /> Upload avatar
         </Fab>
         <br />
         <br />
